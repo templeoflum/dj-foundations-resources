@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Foundations Resources</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #2dd4bf;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            color: #2dd4bf;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            margin-top: 2.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #333;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .grid-wide {
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        }
+
+        a {
+            color: #a0a0a0;
+            text-decoration: none;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            display: block;
+            background: #252525;
+        }
+
+        a:hover {
+            color: #2dd4bf;
+            background: #2a2a2a;
+            transform: translateX(4px);
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: #252525;
+            color: #a0a0a0;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .intro {
+            text-align: center;
+            color: #808080;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+            color: #606060;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DJ Foundations Resources</h1>
+        <p class="intro">Curated links to help you on your DJ journey</p>
+
+        <div class="two-col">
+            <div class="section">
+                <h2>Music Sources</h2>
+                <div class="grid">
+                    <a href="https://www.beatport.com" target="_blank">Beatport</a>
+                    <a href="https://bandcamp.com" target="_blank">Bandcamp</a>
+                    <a href="https://soundcloud.com" target="_blank">SoundCloud</a>
+                    <a href="https://www.beatsource.com" target="_blank">Beatsource</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>DJ Software</h2>
+                <div class="grid">
+                    <a href="https://rekordbox.com" target="_blank">Rekordbox</a>
+                    <a href="https://serato.com" target="_blank">Serato</a>
+                    <a href="https://www.native-instruments.com/traktor" target="_blank">Traktor Pro</a>
+                    <a href="https://www.algoriddim.com/djay" target="_blank">djay Pro</a>
+                    <a href="https://www.virtualdj.com" target="_blank">Virtual DJ</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="two-col">
+            <div class="section">
+                <h2>Utilities</h2>
+                <div class="grid">
+                    <a href="https://lamexp.sourceforge.io" target="_blank">LameXP</a>
+                    <a href="https://mixedinkey.com" target="_blank">Mixed In Key</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Beginner Controllers</h2>
+                <div class="grid">
+                    <a href="https://www.numark.com/product/party-mix-ii" target="_blank">Numark Party Mix II</a>
+                    <a href="https://www.pioneerdj.com/en/product/controller/ddj-flx2" target="_blank">Pioneer DDJ-FLX2</a>
+                    <a href="https://www.native-instruments.com/products/traktor/dj-controllers/traktor-kontrol-s2" target="_blank">NI Traktor S2</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <div class="grid grid-wide">
+                <a href="https://slamacademy.com" target="_blank">Slam Academy</a>
+                <a href="https://encantimusicacademy.com" target="_blank">Encanti Music Academy</a>
+                <a href="https://www.iomusicacademy.com" target="_blank">IO Music Academy</a>
+                <a href="https://www.synthesis.net" target="_blank">Synthesis</a>
+                <a href="https://bassgorilla.com" target="_blank">BassGorilla</a>
+                <a href="https://mixedinkey.com/harmonic-mixing-guide" target="_blank">Harmonic Mixing Guide</a>
+                <a href="http://www.integratedbrain.net/beyondbeatmatching" target="_blank">Beyond Beatmatching</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Video Content & DJ Sets</h2>
+            <div class="grid">
+                <a href="https://boilerroom.tv" target="_blank">Boiler Room</a>
+                <a href="https://www.youtube.com/@HORBerlin" target="_blank">HÖR Berlin</a>
+                <a href="https://www.youtube.com/@DABORATORY" target="_blank">DEF TV</a>
+                <a href="https://www.youtube.com/@Cercle" target="_blank">Cercle</a>
+                <a href="https://www.youtube.com/@ElevatorMusic" target="_blank">Elevator Music</a>
+                <a href="https://www.youtube.com/@subtleradio" target="_blank">Subtle Radio</a>
+                <a href="https://www.youtube.com/@Mixmag" target="_blank">Mixmag</a>
+                <a href="https://www.youtube.com/@RAWCUTSTV" target="_blank">RAWCUTS TV</a>
+                <a href="https://www.youtube.com/@KioskRadio" target="_blank">Kiosk Radio</a>
+                <a href="https://www.youtube.com/@keephush" target="_blank">Keep Hush</a>
+                <a href="https://rinse.fm" target="_blank">Rinse FM</a>
+                <a href="https://ra.co" target="_blank">Resident Advisor</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Record Labels & Collectives</h2>
+            <div class="grid">
+                <a href="https://inspected.com" target="_blank">Inspected</a>
+                <a href="https://upscalerecordings.com" target="_blank">Upscale</a>
+                <a href="https://renrakuglobal.com" target="_blank">Renraku Global</a>
+                <a href="https://www.visionrecordings.nl" target="_blank">Vision Recordings</a>
+                <a href="https://saturaterecords.com" target="_blank">Saturate Records</a>
+                <a href="https://soundmuseum.fm" target="_blank">Sound Museum</a>
+                <a href="https://1985music.com" target="_blank">1985 Music</a>
+                <a href="https://www.twentytwentylon.com" target="_blank">Twenty Twenty London</a>
+                <a href="https://slugwife.com" target="_blank">Slug Wife</a>
+                <a href="https://hyperdub.net" target="_blank">Hyperdub</a>
+                <a href="https://astrophonica.com" target="_blank">Astrophonica</a>
+                <a href="https://projectmooncircle.com" target="_blank">Project Mooncircle</a>
+                <a href="https://terrorhythm.com" target="_blank">Terrorythm</a>
+                <a href="https://freshmoonrecords.com" target="_blank">Freshmoon Records</a>
+                <a href="https://duploc.com" target="_blank">Duploc</a>
+                <a href="https://whitepeachrecords.com" target="_blank">White Peach Records</a>
+                <a href="https://bhumprecords.com" target="_blank">Bhump Records</a>
+                <a href="https://culminate.us" target="_blank">Culminate</a>
+                <a href="https://lowandhigh.com" target="_blank">Low & High</a>
+                <a href="https://sleevelessrecords.com" target="_blank">Sleeveless Records</a>
+                <a href="https://gravitasrecordings.com" target="_blank">Gravitas</a>
+                <a href="https://lowtempmusic.com" target="_blank">Lowtemp Music</a>
+                <a href="https://allgoodrecords.com" target="_blank">All Good Records</a>
+                <a href="https://colonyproductions.com" target="_blank">Colony Productions</a>
+                <a href="https://deadbeats.com" target="_blank">Deadbeats</a>
+                <a href="https://deepdarkanddangerous.com" target="_blank">Deep Dark & Dangerous</a>
+                <a href="https://wakaan.com" target="_blank">Wakaan</a>
+                <a href="https://dramaclubrecordings.com" target="_blank">Drama Club Recordings</a>
+                <a href="https://dirtybird.com" target="_blank">Dirtybird</a>
+                <a href="https://golddiggerrecords.co" target="_blank">Gold Digger Records</a>
+                <a href="https://mau5trap.com" target="_blank">Mau5trap</a>
+                <a href="https://foolsgoldrecords.com" target="_blank">Fools Gold Records</a>
+                <a href="https://maddecent.com" target="_blank">Mad Decent</a>
+                <a href="https://pcmusic.info" target="_blank">PC Music</a>
+                <a href="https://movingcastle.co" target="_blank">Moving Castle</a>
+                <a href="https://soulection.com" target="_blank">Soulection</a>
+                <a href="https://teamsupremebeats.com" target="_blank">Team Supreme</a>
+                <a href="https://nightowlcollective.co" target="_blank">Nightowl Collective</a>
+                <a href="https://kumo-collective.com" target="_blank">KUMO Collective</a>
+                <a href="https://phuturecollective.com" target="_blank">Phuture Collective</a>
+                <a href="https://blackmarblecollective.com" target="_blank">Black Marble Collective</a>
+                <a href="https://svnsetwaves.com" target="_blank">SVNSET WAVES</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Genres to Explore</h2>
+            <div class="tags">
+                <span class="tag">Dubstep</span>
+                <span class="tag">UK Garage</span>
+                <span class="tag">Jungle</span>
+                <span class="tag">Footwork</span>
+                <span class="tag">Jersey Club</span>
+                <span class="tag">Drum & Bass</span>
+                <span class="tag">Halftime</span>
+                <span class="tag">IDM</span>
+                <span class="tag">Trap</span>
+                <span class="tag">Glitch Hop</span>
+                <span class="tag">House</span>
+                <span class="tag">Hardstyle</span>
+                <span class="tag">Trance</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Essential Terms</h2>
+            <div class="tags">
+                <span class="tag">Scrubbing</span>
+                <span class="tag">BPM / Tempo</span>
+                <span class="tag">Key</span>
+                <span class="tag">Phrasing</span>
+                <span class="tag">Beatmatching</span>
+                <span class="tag">EQ</span>
+                <span class="tag">Filter</span>
+                <span class="tag">Cue</span>
+                <span class="tag">Loop</span>
+                <span class="tag">Bar</span>
+                <span class="tag">Channel</span>
+                <span class="tag">Gain</span>
+                <span class="tag">Fader</span>
+                <span class="tag">Platter / Jog Wheel</span>
+                <span class="tag">Sync</span>
+            </div>
+        </div>
+
+        <footer>
+            <p>DJ Foundations - Song Prep & Basic Mixing</p>
+        </footer>
+    </div>
+</body>
+</html>

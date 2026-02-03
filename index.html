@@ -301,21 +301,21 @@
         <div class="section">
             <h2>Essential Terms</h2>
             <div class="tags">
-                <span class="tag">Scrubbing</span>
+                <span class="tag has-info" data-type="term" data-key="scrubbing">Scrubbing</span>
                 <span class="tag has-info" data-type="term" data-key="bpm">BPM / Tempo</span>
-                <span class="tag">Key</span>
+                <span class="tag has-info" data-type="term" data-key="key">Key</span>
                 <span class="tag has-info" data-type="term" data-key="phrasing">Phrasing</span>
                 <span class="tag has-info" data-type="term" data-key="beatmatching">Beatmatching</span>
                 <span class="tag has-info" data-type="term" data-key="eq">EQ</span>
-                <span class="tag">Filter</span>
+                <span class="tag has-info" data-type="term" data-key="filter">Filter</span>
                 <span class="tag has-info" data-type="term" data-key="cue">Cue</span>
-                <span class="tag">Loop</span>
-                <span class="tag">Bar</span>
-                <span class="tag">Channel</span>
-                <span class="tag">Gain</span>
-                <span class="tag">Fader</span>
-                <span class="tag">Platter / Jog Wheel</span>
-                <span class="tag">Sync</span>
+                <span class="tag has-info" data-type="term" data-key="loop">Loop</span>
+                <span class="tag has-info" data-type="term" data-key="bar">Bar</span>
+                <span class="tag has-info" data-type="term" data-key="channel">Channel</span>
+                <span class="tag has-info" data-type="term" data-key="gain">Gain</span>
+                <span class="tag has-info" data-type="term" data-key="fader">Fader</span>
+                <span class="tag has-info" data-type="term" data-key="jogwheel">Platter / Jog Wheel</span>
+                <span class="tag has-info" data-type="term" data-key="sync">Sync</span>
             </div>
         </div>
 
@@ -325,16 +325,16 @@
                 <span class="tag has-info" data-type="genre" data-key="dubstep">Dubstep</span>
                 <span class="tag has-info" data-type="genre" data-key="ukgarage">UK Garage</span>
                 <span class="tag has-info" data-type="genre" data-key="jungle">Jungle</span>
-                <span class="tag">Footwork</span>
-                <span class="tag">Jersey Club</span>
+                <span class="tag has-info" data-type="genre" data-key="footwork">Footwork</span>
+                <span class="tag has-info" data-type="genre" data-key="jerseyclub">Jersey Club</span>
                 <span class="tag has-info" data-type="genre" data-key="dnb">Drum & Bass</span>
-                <span class="tag">Halftime</span>
-                <span class="tag">IDM</span>
-                <span class="tag">Trap</span>
-                <span class="tag">Glitch Hop</span>
-                <span class="tag">House</span>
-                <span class="tag">Hardstyle</span>
-                <span class="tag">Trance</span>
+                <span class="tag has-info" data-type="genre" data-key="halftime">Halftime</span>
+                <span class="tag has-info" data-type="genre" data-key="idm">IDM</span>
+                <span class="tag has-info" data-type="genre" data-key="trap">Trap</span>
+                <span class="tag has-info" data-type="genre" data-key="glitchhop">Glitch Hop</span>
+                <span class="tag has-info" data-type="genre" data-key="house">House</span>
+                <span class="tag has-info" data-type="genre" data-key="hardstyle">Hardstyle</span>
+                <span class="tag has-info" data-type="genre" data-key="trance">Trance</span>
             </div>
         </div>
 
@@ -520,6 +520,26 @@
                 ],
                 link: { text: "Read more on Resident Advisor", url: "https://ra.co/music/jungle" }
             },
+            footwork: {
+                title: "Footwork",
+                bpm: "160",
+                origin: "Chicago, late 1990s",
+                description: "Born from Chicago's ghetto house and juke scenes, footwork features frenetic rhythms, chopped vocal samples, and syncopated 808 patterns. Originally made for competitive dance battles, the genre gained international recognition through Teklife crew and the late DJ Rashad.",
+                labels: [
+                    { name: "Teklife", url: "https://teklife.bandcamp.com/" }
+                ],
+                link: { text: "Read more on Resident Advisor", url: "https://ra.co/music/footwork" }
+            },
+            jerseyclub: {
+                title: "Jersey Club",
+                bpm: "130-140",
+                origin: "Newark, NJ, early 2000s",
+                description: "High-energy dance music built on Baltimore club foundations. Characterized by rapid-fire kick drums, bed-squeaking samples, and chopped R&B vocals. Jersey club emphasizes crowd interaction and has influenced mainstream pop production.",
+                labels: [
+                    { name: "Mad Decent", url: "https://maddecent.bandcamp.com/music" }
+                ],
+                link: { text: "Read more on Resident Advisor", url: "https://ra.co/music/jersey-club" }
+            },
             dnb: {
                 title: "Drum & Bass",
                 bpm: "170-180",
@@ -531,14 +551,95 @@
                     { name: "1985 Music", url: "https://1985-music.bandcamp.com/" }
                 ],
                 link: { text: "Read more on Resident Advisor", url: "https://ra.co/music/drum-n-bass" }
+            },
+            halftime: {
+                title: "Halftime",
+                bpm: "170 (half-speed feel)",
+                origin: "UK/US, 2010s",
+                description: "A subgenre of drum & bass that emphasizes the snare on beat 3 instead of 2 and 4, creating a slower, head-nodding feel at D&B tempos. Heavily influenced by hip-hop, halftime features intricate sound design, deep bass, and spacious arrangements.",
+                labels: [
+                    { name: "1985 Music", url: "https://1985-music.bandcamp.com/" },
+                    { name: "Inspected", url: "https://inspected.bandcamp.com/" }
+                ],
+                link: { text: "Read more on Resident Advisor", url: "https://ra.co/music/drum-n-bass" }
+            },
+            idm: {
+                title: "IDM",
+                bpm: "Variable",
+                origin: "UK/US, early 1990s",
+                description: "Intelligent Dance Music (a contested term) describes experimental electronic music prioritizing complex rhythms, unusual textures, and unconventional song structures. Artists like Aphex Twin, Autechre, and Boards of Canada defined the sound. Despite the name, it's often more for listening than dancing.",
+                labels: [
+                    { name: "Project Mooncircle", url: "https://projectmooncircle.bandcamp.com/" }
+                ],
+                link: { text: "Read more on Resident Advisor", url: "https://ra.co/music/idm" }
+            },
+            trap: {
+                title: "Trap",
+                bpm: "140 (half-time feel)",
+                origin: "Atlanta, early 2000s",
+                description: "Originally a hip-hop subgenre from the American South, trap is defined by rolling hi-hats, heavy 808 bass, and dark atmospheres. EDM trap emerged in the 2010s, blending these elements with festival-ready drops. The style has influenced nearly every corner of electronic music.",
+                labels: [
+                    { name: "Mad Decent", url: "https://maddecent.bandcamp.com/music" },
+                    { name: "Fools Gold Records", url: "https://foolsgoldrecs.bandcamp.com/" },
+                    { name: "Wakaan", url: "https://wakaan.bandcamp.com/" }
+                ],
+                link: { text: "Read more on Resident Advisor", url: "https://ra.co/music/trap" }
+            },
+            glitchhop: {
+                title: "Glitch Hop",
+                bpm: "100-115",
+                origin: "US, late 2000s",
+                description: "Combines hip-hop's swing and funk with glitchy digital artifacts, wonky synths, and heavy bass. The genre emphasizes groove and musicality while incorporating experimental sound design. Artists like Tipper and Koan Sound helped define the sound.",
+                labels: [
+                    { name: "Gravitas", url: "https://gravitasrecordings.bandcamp.com/" },
+                    { name: "Slug Wife", url: "https://slugwife.bandcamp.com/artists" }
+                ],
+                link: { text: "Read more on Resident Advisor", url: "https://ra.co/music/glitch" }
+            },
+            house: {
+                title: "House",
+                bpm: "120-130",
+                origin: "Chicago, early 1980s",
+                description: "One of electronic music's foundational genres, house emerged from Chicago's club scene. Built on a steady four-on-the-floor kick drum, house encompasses countless subgenres from deep and soulful to hard and jackin'. It remains the backbone of global dance music culture.",
+                labels: [
+                    { name: "Dirtybird", url: "https://dirtybirdrecords.bandcamp.com/" },
+                    { name: "Soulection", url: "https://soulection.bandcamp.com/" }
+                ],
+                link: { text: "Read more on Resident Advisor", url: "https://ra.co/music/house" }
+            },
+            hardstyle: {
+                title: "Hardstyle",
+                bpm: "150-160",
+                origin: "Netherlands, late 1990s",
+                description: "A hard dance genre combining hard trance's euphoric melodies with hardcore's distorted kicks. Characterized by the signature reverse bass kick, hardstyle dominates European festival culture. Subgenres range from euphoric hardstyle to the darker rawstyle.",
+                labels: [],
+                link: { text: "Read more on Resident Advisor", url: "https://ra.co/music/hardstyle" }
+            },
+            trance: {
+                title: "Trance",
+                bpm: "130-150",
+                origin: "Germany, early 1990s",
+                description: "Known for its hypnotic, repetitive melodies and build-and-release structure. Trance aims for euphoric, transcendent experiences through layered synths and emotional breakdowns. Subgenres include progressive, psytrance, uplifting, and tech trance.",
+                labels: [
+                    { name: "Mau5trap", url: "https://mau5trap.bandcamp.com/" }
+                ],
+                link: { text: "Read more on Resident Advisor", url: "https://ra.co/music/trance" }
             }
         };
 
         // Term data
         const terms = {
+            scrubbing: {
+                title: "Scrubbing",
+                description: "Moving through a track manually by touching and moving the jog wheel or platter. Used to find specific points in a track, set cue points, or preview sections. Scratching is an advanced form of scrubbing used as a performance technique."
+            },
             bpm: {
                 title: "BPM / Tempo",
                 description: "Beats Per Minute - the measurement of a track's speed. Most DJ software analyzes and displays BPM automatically. Understanding BPM helps you mix tracks that are compatible in speed. For example, house typically runs 120-130 BPM while drum & bass is around 170-180 BPM."
+            },
+            key: {
+                title: "Key",
+                description: "The musical key of a track (e.g., A minor, G major). Mixing tracks in compatible keys creates harmonic blends that sound musical rather than dissonant. Tools like Mixed In Key analyze tracks, and systems like the Camelot Wheel help identify compatible keys quickly."
             },
             phrasing: {
                 title: "Phrasing",
@@ -552,9 +653,41 @@
                 title: "EQ (Equalization)",
                 description: "Mixer controls that adjust frequency bands - typically Low (bass), Mid (vocals, melodies), and High (hi-hats, cymbals). EQ is essential for smooth transitions: cutting the bass on an incoming track prevents the low end from clashing, then swapping the bass frequencies creates a clean mix."
             },
+            filter: {
+                title: "Filter",
+                description: "An effect that removes frequencies above (low-pass) or below (high-pass) a cutoff point. Sweeping a low-pass filter gradually removes highs, creating a muffled sound useful for transitions. High-pass filters thin out the bass, useful for bringing in a new track."
+            },
             cue: {
                 title: "Cue",
                 description: "A saved point in a track that you can instantly jump to. The main cue point is typically set at the first beat. Hot cues let you save multiple points for drops, vocals, or other key moments. Cueing is essential for preparing tracks and creating precise mixes."
+            },
+            loop: {
+                title: "Loop",
+                description: "A section of a track that repeats continuously. DJs use loops to extend sections, build tension, or hold a groove while preparing the next track. Loop lengths are typically musical divisions: 1, 2, 4, 8, 16, or 32 beats."
+            },
+            bar: {
+                title: "Bar",
+                description: "A musical unit typically containing 4 beats in electronic music (4/4 time). Most dance music is structured in 4, 8, 16, or 32 bar sections. Understanding bars helps with phrasing and knowing when changes will occur in a track."
+            },
+            channel: {
+                title: "Channel",
+                description: "An input path on a mixer corresponding to one audio source (deck, turntable, or input). Each channel has its own volume fader, EQ controls, and gain. A standard DJ mixer has 2-4 channels."
+            },
+            gain: {
+                title: "Gain",
+                description: "The input level control at the top of each mixer channel. Proper gain staging ensures tracks play at consistent volumes and prevents distortion. Set gain so the track peaks around 0dB on the meter, adjusting for each track's loudness."
+            },
+            fader: {
+                title: "Fader",
+                description: "A sliding volume control. Channel faders control individual deck volumes, while the crossfader blends between two channels. Moving a fader up increases volume; moving it down decreases it. The crossfader moves left/right to blend between decks."
+            },
+            jogwheel: {
+                title: "Platter / Jog Wheel",
+                description: "The circular control surface on DJ controllers and CDJs used to manipulate playback. Touch the top to scratch or scrub; touch the side to nudge the track forward or back for beatmatching. Some platters are motorized to simulate vinyl feel."
+            },
+            sync: {
+                title: "Sync",
+                description: "A button that automatically matches the BPM of one track to another. While useful for beginners or complex multi-deck setups, learning manual beatmatching first develops essential listening skills. Many DJs use sync as a tool alongside manual techniques."
             }
         };
 

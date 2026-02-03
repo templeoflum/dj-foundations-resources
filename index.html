@@ -108,6 +108,165 @@
             padding: 0.4rem 0.8rem;
             border-radius: 20px;
             font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .tag:hover {
+            color: #2dd4bf;
+            border-color: #2dd4bf;
+        }
+
+        .tag.has-info::after {
+            content: ' +';
+            opacity: 0.5;
+            font-size: 0.8em;
+        }
+
+        /* Modal styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal {
+            background: #222;
+            border-radius: 12px;
+            max-width: 500px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+            border: 1px solid #333;
+        }
+
+        .modal-header {
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background: #222;
+        }
+
+        .modal-title {
+            color: #2dd4bf;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            color: #808080;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0;
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            color: #e0e0e0;
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+        }
+
+        .modal-body p {
+            margin-bottom: 1rem;
+            color: #c0c0c0;
+        }
+
+        .modal-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .modal-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .modal-meta-item {
+            background: #1a1a1a;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+
+        .modal-meta-label {
+            color: #808080;
+        }
+
+        .modal-meta-value {
+            color: #2dd4bf;
+            font-weight: 600;
+        }
+
+        .modal-section-title {
+            color: #e0e0e0;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 1.25rem 0 0.5rem 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .modal-labels {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .modal-label-link {
+            background: #2a2a2a;
+            color: #a0a0a0;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .modal-label-link:hover {
+            color: #2dd4bf;
+            background: #333;
+            transform: none;
+        }
+
+        .modal-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #2dd4bf;
+            text-decoration: none;
+            font-size: 0.9rem;
+            background: transparent;
+            padding: 0;
+        }
+
+        .modal-link:hover {
+            text-decoration: underline;
+            background: transparent;
+            transform: none;
         }
 
         .intro {
@@ -272,12 +431,12 @@
         <div class="section">
             <h2>Genres to Explore</h2>
             <div class="tags">
-                <span class="tag">Dubstep</span>
-                <span class="tag">UK Garage</span>
-                <span class="tag">Jungle</span>
+                <span class="tag has-info" data-type="genre" data-key="dubstep">Dubstep</span>
+                <span class="tag has-info" data-type="genre" data-key="ukgarage">UK Garage</span>
+                <span class="tag has-info" data-type="genre" data-key="jungle">Jungle</span>
                 <span class="tag">Footwork</span>
                 <span class="tag">Jersey Club</span>
-                <span class="tag">Drum & Bass</span>
+                <span class="tag has-info" data-type="genre" data-key="dnb">Drum & Bass</span>
                 <span class="tag">Halftime</span>
                 <span class="tag">IDM</span>
                 <span class="tag">Trap</span>
@@ -292,13 +451,13 @@
             <h2>Essential Terms</h2>
             <div class="tags">
                 <span class="tag">Scrubbing</span>
-                <span class="tag">BPM / Tempo</span>
+                <span class="tag has-info" data-type="term" data-key="bpm">BPM / Tempo</span>
                 <span class="tag">Key</span>
-                <span class="tag">Phrasing</span>
-                <span class="tag">Beatmatching</span>
-                <span class="tag">EQ</span>
+                <span class="tag has-info" data-type="term" data-key="phrasing">Phrasing</span>
+                <span class="tag has-info" data-type="term" data-key="beatmatching">Beatmatching</span>
+                <span class="tag has-info" data-type="term" data-key="eq">EQ</span>
                 <span class="tag">Filter</span>
-                <span class="tag">Cue</span>
+                <span class="tag has-info" data-type="term" data-key="cue">Cue</span>
                 <span class="tag">Loop</span>
                 <span class="tag">Bar</span>
                 <span class="tag">Channel</span>
@@ -313,5 +472,152 @@
             <p>DJ Foundations - Song Prep & Basic Mixing</p>
         </footer>
     </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title"></h3>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <script>
+        // Genre data
+        const genres = {
+            dubstep: {
+                title: "Dubstep",
+                bpm: "140",
+                origin: "South London, late 1990s",
+                description: "Emerged from UK garage and jungle, dubstep is characterized by sparse, syncopated rhythms and heavy sub-bass. Early dubstep focused on dark atmospheres and wobbling basslines. The genre split in the 2010s between the deeper, minimal UK sound and the aggressive 'brostep' popularized in America.",
+                labels: [
+                    { name: "Hyperdub", url: "https://hyperdub.bandcamp.com/" },
+                    { name: "Deep Dark & Dangerous", url: "https://deepdarkdangerous.bandcamp.com/" },
+                    { name: "Duploc", url: "https://duploc.bandcamp.com/" }
+                ],
+                link: { text: "Read more on Resident Advisor", url: "https://ra.co/music/dubstep" }
+            },
+            ukgarage: {
+                title: "UK Garage",
+                bpm: "130-140",
+                origin: "London, mid 1990s",
+                description: "Born from American garage house filtered through British rave culture. Defined by shuffling 2-step rhythms, chopped vocals, and warm bass. UK Garage spawned numerous subgenres including 2-step, speed garage, and bassline, and directly influenced dubstep and grime.",
+                labels: [
+                    { name: "Garage Shared", url: "https://garageshared.bandcamp.com/" },
+                    { name: "Swamp 81", url: "https://swamp81.bandcamp.com/" },
+                    { name: "Kiwi Rekords", url: "https://kiwirekords.bandcamp.com/" }
+                ],
+                link: { text: "Read more on Resident Advisor", url: "https://ra.co/music/uk-garage" }
+            },
+            jungle: {
+                title: "Jungle",
+                bpm: "160-180",
+                origin: "UK, early 1990s",
+                description: "Developed from hardcore breakbeat and reggae soundsystem culture. Features rapid breakbeats (often the 'Amen break'), heavy sub-bass, and reggae/ragga vocal samples. Jungle evolved into drum & bass but has seen revivals honoring its raw, sample-heavy roots.",
+                labels: [
+                    { name: "Hospital Records", url: "https://hospitalrecords.bandcamp.com/" },
+                    { name: "Astrophonica", url: "https://astrophonica.bandcamp.com/" }
+                ],
+                link: { text: "Read more on Resident Advisor", url: "https://ra.co/music/jungle" }
+            },
+            dnb: {
+                title: "Drum & Bass",
+                bpm: "170-180",
+                origin: "UK, mid 1990s",
+                description: "Evolved from jungle, drum & bass emphasizes fast breakbeats and heavy bass. The genre spans from liquid funk's melodic atmospheres to neurofunk's technical sound design. It remains one of the UK's most influential electronic exports with a dedicated global scene.",
+                labels: [
+                    { name: "Hospital Records", url: "https://hospitalrecords.bandcamp.com/" },
+                    { name: "Astrophonica", url: "https://astrophonica.bandcamp.com/" },
+                    { name: "1985 Music", url: "https://1985-music.bandcamp.com/" }
+                ],
+                link: { text: "Read more on Resident Advisor", url: "https://ra.co/music/drum-n-bass" }
+            }
+        };
+
+        // Term data
+        const terms = {
+            bpm: {
+                title: "BPM / Tempo",
+                description: "Beats Per Minute - the measurement of a track's speed. Most DJ software analyzes and displays BPM automatically. Understanding BPM helps you mix tracks that are compatible in speed. For example, house typically runs 120-130 BPM while drum & bass is around 170-180 BPM."
+            },
+            phrasing: {
+                title: "Phrasing",
+                description: "The structure of musical sections, typically in multiples of 8 bars (8, 16, 32). Most electronic music changes elements (drops, breakdowns, new melodies) at phrase boundaries. Mixing on the phrase means aligning these sections between two tracks so transitions feel natural."
+            },
+            beatmatching: {
+                title: "Beatmatching",
+                description: "The fundamental DJ skill of adjusting one track's tempo to match another so their beats align. This involves using the pitch fader to speed up or slow down a track, and nudging the jog wheel to sync the beats. While sync buttons exist, manual beatmatching develops crucial listening skills."
+            },
+            eq: {
+                title: "EQ (Equalization)",
+                description: "Mixer controls that adjust frequency bands - typically Low (bass), Mid (vocals, melodies), and High (hi-hats, cymbals). EQ is essential for smooth transitions: cutting the bass on an incoming track prevents the low end from clashing, then swapping the bass frequencies creates a clean mix."
+            },
+            cue: {
+                title: "Cue",
+                description: "A saved point in a track that you can instantly jump to. The main cue point is typically set at the first beat. Hot cues let you save multiple points for drops, vocals, or other key moments. Cueing is essential for preparing tracks and creating precise mixes."
+            }
+        };
+
+        // Modal functionality
+        const modal = document.getElementById('modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalBody = document.getElementById('modal-body');
+        const modalClose = document.getElementById('modal-close');
+
+        function openModal(type, key) {
+            let content = '';
+
+            if (type === 'genre' && genres[key]) {
+                const g = genres[key];
+                modalTitle.textContent = g.title;
+                content = `
+                    <div class="modal-meta">
+                        <div class="modal-meta-item">
+                            <span class="modal-meta-label">BPM: </span>
+                            <span class="modal-meta-value">${g.bpm}</span>
+                        </div>
+                        <div class="modal-meta-item">
+                            <span class="modal-meta-label">Origin: </span>
+                            <span class="modal-meta-value">${g.origin}</span>
+                        </div>
+                    </div>
+                    <p>${g.description}</p>
+                    <div class="modal-section-title">Labels to explore</div>
+                    <div class="modal-labels">
+                        ${g.labels.map(l => `<a href="${l.url}" target="_blank" class="modal-label-link">${l.name}</a>`).join('')}
+                    </div>
+                    <a href="${g.link.url}" target="_blank" class="modal-link">${g.link.text} →</a>
+                `;
+            } else if (type === 'term' && terms[key]) {
+                const t = terms[key];
+                modalTitle.textContent = t.title;
+                content = `<p>${t.description}</p>`;
+            }
+
+            modalBody.innerHTML = content;
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+        }
+
+        // Event listeners
+        document.querySelectorAll('.tag.has-info').forEach(tag => {
+            tag.addEventListener('click', () => {
+                openModal(tag.dataset.type, tag.dataset.key);
+            });
+        });
+
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
 </body>
 </html>
